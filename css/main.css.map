@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/basec/_comon-style.scss","../scss/components/_main-section.scss","../scss/basec/_color.scss","../scss/basec/_variable.scss"],"names":[],"mappings":"AAAA,UAEI,kCACF,kBACI,eAGJ,wBACI,gBAGJ,cACI,qBAGJ,gBACI,SACA,gBCjBN,cACE,aACA,oBACA,eACA,sBACA,sBAEA,6BACE,MCRO,QDSP,UEHQ,KFIR,gBACA,YEGc,KFFd,SACA,mBAEF,gBACE,SACA,MCjBO,QDkBP,eACA,gBACA,iBAGA,qBACE","file":"main.css"}
