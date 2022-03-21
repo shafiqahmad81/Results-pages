@@ -23,15 +23,65 @@
   .navbar-section{
     position: relative;
     display: flex;
+    margin-top: 35px;
+    margin-bottom: 55px;
     .nav-left{
       left: 0;
+
+      .main-menu{
+        li{
+          display: inline-block;
+
+          a{
+            text-decoration: none;
+            color: $cod-gray;
+            padding: 14px 30px;
+            border: 1px solid #E5E5E5;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: $body-size;
+            line-height: $body-text-height;
+            img{
+              margin-left: 10px;
+            }
+          }
+          .more{
+            border: none;
+            padding: 0;
+            color: $blue;
+          }
+        }
+      }
     }
     .nav-right{
       position: absolute;
       right: 0;
+      display: flex;
+      align-items: center;
+      .icon{
+        margin: 0;
+        margin-left: 10px;
+        padding: 10px;
+        border: 1px solid #E5E5E5;
+        border-radius: 5px;
+        span{
+          font-size: $body-size;
+          line-height: $body-text-height;
+          font-weight: 600;
+          color: $cod-gray;
+          margin-left: 15px;
+        }
+        
+      }
+      .map{
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+      .frame-icon {
+        background-color: $blue;
+        margin-left: 0;
+        border: none;
+      }
     }
-  }
-  .icon{
-    background-color: #ddd;
   }
 }
