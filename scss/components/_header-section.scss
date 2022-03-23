@@ -31,11 +31,12 @@
       .main-menu{
         li{
           display: inline-block;
+          position: relative;
 
           a{
             text-decoration: none;
             color: $cod-gray;
-            padding: 14px 30px;
+            padding: 14px 70px 14px 30px;
             border: 1px solid #E5E5E5;
             border-radius: 8px;
             font-weight: 600;
@@ -43,6 +44,9 @@
             line-height: $body-text-height;
             img{
               margin-left: 10px;
+              position: absolute;
+              top: 45%;
+              right: 40px;
             }
           }
           .more{
@@ -64,12 +68,19 @@
         padding: 10px;
         border: 1px solid #E5E5E5;
         border-radius: 5px;
+        cursor: pointer;
+
         span{
           font-size: $body-size;
           line-height: $body-text-height;
           font-weight: 600;
           color: $cod-gray;
           margin-left: 15px;
+        }
+
+        .location{
+          display: flex;
+          align-items: center;
         }
         
       }
