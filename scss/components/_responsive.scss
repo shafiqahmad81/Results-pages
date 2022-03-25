@@ -3,18 +3,14 @@
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
-  
-  /* CSS */
-  
-}
+
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
   .section-wrapper .sidbar-wrap .check-item label {
     font-size: 12px;
   }
@@ -40,26 +36,27 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .header-section .navbar-section .nav-right {
-    left: 0;
-    top: 51px;
+    right: 0;
+    top: 67px;
   }
   .section-wrapper {
-    display: inline;
+    display: inherit;
+    margin-top: 90px;
   }
   .section-wrapper .content-wrapper {
     width: 100%;
     height: inherit;
   }
   
-.section-wrapper .sidbar-wrap {
+  .section-wrapper .sidbar-wrap {
     width: inherit;
- }
+  }
 
-.section-wrapper .sidbar-wrap .room-count .count {
+  .section-wrapper .sidbar-wrap .room-count .count {
     left: 49%;
-}
+  }
   
 }
 
@@ -79,9 +76,26 @@
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 767px) {
   
-  /* CSS */
+  .section-wrapper {
+    margin-top: -17px;
+  }
+  .section-wrapper .content-wrapper .content-top {
+    display: inherit;
+  }
+  .header-section .navbar-section .nav-left .main-menu li .more {
+    margin-top: 35px;
+  }
+
+  .section-wrapper .content-wrapper .content-top .margin-left,
+  .section-wrapper .content-wrapper .content-top .margin-right {
+    margin: 0;
+    margin-bottom: 35px;
+  }
+  .header-section .navbar-section .nav-left .main-menu li .more {
+    margin-left: 6px;
+  }
   
 }
 
