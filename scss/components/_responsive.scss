@@ -65,9 +65,14 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 655px) and (max-width: 767px) {
   
-  /* CSS */
+  ul.main-menu {
+    margin-bottom: 30px;
+  }
+  .header-section .navbar-section .nav-right {
+    top: 78px;
+  }
   
 }
 
@@ -96,6 +101,9 @@
   .header-section .navbar-section .nav-left .main-menu li .more {
     margin-left: 6px;
   }
+  .header-section .navbar-section .nav-left .main-menu li a {
+    font-size: 11px;
+  }
   
 }
 
@@ -104,8 +112,60 @@
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media  (max-width: 590px) {
   
-  /* CSS */
+  .header-section .navbar-section .nav-left .main-menu li a {
+    padding: 10px 56px 10px 15px;
+    font-size: 12px;
+  }
+  .header-section .navbar-section .nav-left .main-menu li a img {
+    top: 43%;
+    right: 18px;
+  }
+  
+}
+
+
+
+@media  (max-width: 480px) {
+  
+  .header-section .navbar-section .nav-left .main-menu li {
+    display: inherit;
+    padding: 0;
+    border: 1px solid #e5e5e5;
+    padding: 8px 20px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+  }
+  .header-section .navbar-section .nav-left .main-menu li a {
+    padding: 0;
+    border: none;
+    font-size: 10px;
+  }
+  .header-section .navbar-section .nav-left .main-menu li .more {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .header-section .navbar-section .nav-right .icon {
+    margin-left: 0;
+    margin-bottom: 5px;
+
+    img{
+      display: inline-block;
+    }
+  }
+  .header-section .navbar-section .nav-right {
+    display: grid;
+    top: 16px;
+  }
+  .section-wrapper .sidbar-wrap .amenites {
+    display: inherit;
+  }
+  .section-wrapper .sidbar-wrap .amenites .amenites-right {
+    position: inherit;
+    width: inherit;
+    right: 0;
+    top: 0;
+  }
   
 }
