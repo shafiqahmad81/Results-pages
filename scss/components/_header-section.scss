@@ -50,17 +50,18 @@
               right: 40px;
             }
           }
+          .more-filter{
+            padding-right: 0;
+          }
           .more{
             border: none;
-            padding: 0;
             color: $blue;
           }
         }
       }
     }
     .nav-right{
-      position: absolute;
-      right: 0;
+      margin-left: auto;
       display: flex;
       align-items: center;
       .icon{
@@ -70,6 +71,10 @@
         border: 1px solid #E5E5E5;
         border-radius: 5px;
         cursor: pointer;
+
+        img{
+          max-width: inherit;
+        }
 
         span{
           font-size: $body-size;
