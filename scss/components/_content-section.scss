@@ -189,71 +189,141 @@
     .title{
       margin-bottom: 57px;
 
-      &::after {
-        position: absolute;
-        content: "";
-        background-color: $blue;
-        width: 10px;
-        height: 10px;
-        left: 90px;
-        top: 144px;
-        z-index: 1;
-        border-radius: 50%;
-        border: 2px solid #fff;
-      }
-      &::before {
-        position: absolute;
-        content: "";
-        background-color: $blue;
-        width: 10px;
-        height: 10px;
-        left: 235px;
-        top: 144px;
-        z-index: 1;
-        border-radius: 50%;
-        border: 2px solid #fff;
-      }
     }
     .renge-slid{
-      position: relative;
       margin-bottom: 50px;
+    }
 
-      &::after{
-        position: absolute;
-        content: "";
-        top: 50px;
-        left: 0;
-        width: 80px;
-        height: 3px;
-        background-color: #E0DFE2;
-        border-radius: 50px 0 0 50px;
+    .ui-widget-header {
+      border: 1px solid $blue;
+      background: $blue;
+      color: #FFFF;
+      font-weight: bold;
+  }
+
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active  {
+      border: 1px solid #FFFFFF;
+      background: $blue;
+      font-weight: normal;
+      color: #FFFFFF;
+      border-radius: 50%;
+  }
+
+  .ui-state-focus:focus{
+    outline: none;
+    box-shadow: none;
+  }
+
+  .ui-slider-horizontal {
+    height: 0.3em;
+  }
+  .ui-slider-horizontal .ui-slider-handle {
+    top: -0.5em;
+    margin-left: -0.6em;
+  }
+
+  .range-slider{
+    width: 300px;
+    position: relative;
+
+    input{
+      width: 60px;
+      height: 40px;
+      text-align: center;
+      border: 1px solid rgba(159, 159, 159, 0.1) !important;
+      border-radius: 8px;
+
+      &:focus{
+        outline: none;
       }
-      &::before{
-        position: absolute;
-        content: "";
-        top: 50px;
-        left: 80px;
-        width: 150px;
-        height: 3px;
-        background-color: $blue;
-        border-radius: 50px 0 0 50px;
-      }
     }
+    input#amount-2 {
+      position: absolute;
+      right: 0;
+    }
+  }
 
-    .renge-count{
-      padding: 12px 30px;
-      background: #fff;
-      // box-shadow: 0px 2px 6px rgb(0 0 0 / 0.25);
-      border: 1px solid rgba(159, 159, 159, 0.1);
-      border-radius: 5px;
-      font-size: 10px;
-      line-height: 12px;
-      margin-bottom: 32px;
+  .star-ratting{
+    margin-bottom: 20px;
+    h3{
+      margin-bottom: 20px;
     }
+  }
 
-    .range-slid{
-      width: 100%;
-    }
+ 
+
+#full-stars-example-two {
+
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  .rating-group {
+    display: inline-flex;
+  }
+  
+  /* make hover effect work properly in IE */
+  .rating__icon {
+    pointer-events: none;
+  }
+  
+  /* hide radio inputs */
+  .rating__input {
+   position: absolute !important;
+   left: -9999px !important;
+  }
+  
+  /* hide 'none' input from screenreaders */
+  .rating__input--none {
+    display: none
+  }
+
+  /* set icon padding and size */
+  .rating__label {
+    cursor: pointer;
+    padding: 0 0.1em;
+    font-size: 2rem;
+  }
+  
+  /* set default star color */
+  .rating__icon--star {
+    color: orange;
+  }
+
+  /* if any input is checked, make its following siblings grey */
+  .rating__input:checked ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+  
+  /* make all stars orange on rating group hover */
+  .rating-group:hover .rating__label .rating__icon--star {
+    color: orange;
+  }
+
+  /* make hovered input's following siblings grey on hover */
+  .rating__input:hover ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+}
+
+
+body {
+  padding: 1rem;
+  text-align: center;
+}
+
+
+  
+
+  // .input-wrap{
+  //   input{
+  //     .btn{
+  //       width: 20px;
+  //       padding: 10px 20px;
+  //       background-color: #ddd;
+  //       display: inline-block;
+  //     }
+  //   }
+  // }
+
+
     .btn-r{
       margin-right: 72px;
     }
