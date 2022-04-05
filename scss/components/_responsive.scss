@@ -1,35 +1,11 @@
 /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-
-
-/* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (max-width: 1280px) {
-  .section-wrapper .sidbar-wrap .check-item label {
-    font-size: 12px;
-  }
-.section-wrapper .sidbar-wrap .check-item label::after {
-  width: 10px;
-  height: 10px;
-  left: -20px;
-  }
-.section-wrapper .sidbar-wrap .check-item label::before {
-  left: -17px;
-  }
-.section-wrapper .sidbar-wrap .check-item label {
-  margin-left: 20px;
-  }
-.section-wrapper .sidbar-wrap .show-all .show::after {
-  left: 170px;
-  }
-  
-}
+@media (max-width: 1280px) {}
+
+
 
 /* 
   ##Device = Tablets, Ipads (portrait)
@@ -37,47 +13,24 @@
 */
 
 @media (max-width: 1024px) {
-  .header-section .navbar-section .nav-right {
-    right: 0;
-    top: 67px;
-  }
-  .section-wrapper {
-    display: inherit;
-  }
-  .section-wrapper .content-wrapper {
-    width: 100%;
-    height: inherit;
-  }
-  
-  .section-wrapper .sidbar-wrap {
-    width: inherit;
+
+  .card-item {
+    width: 100% !important;
   }
 
-  .section-wrapper .sidbar-wrap .room-count .count {
-    left: 49%;
+  .navbar-section-button {
+    display: block !important;
   }
 
-  .section-wrapper .sidbar-wrap .range-slider {
-    width: 80%;
-}
-  
+  .header-section .navbar-2 {
+    position: inherit !important;
+    margin-top: 20px;
+  }
+
 }
 
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
 
-@media (min-width: 655px) and (max-width: 767px) {
-  
-  ul.main-menu {
-    margin-bottom: 30px;
-  }
-  .header-section .navbar-section .nav-right {
-    top: 78px;
-  }
-  
-}
+
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -85,102 +38,46 @@
 */
 
 @media (max-width: 767px) {
-  
+
   .section-wrapper {
-    margin-top: -17px;
-  }
-  .section-wrapper .content-wrapper .content-top {
-    display: inherit;
+    display: inherit !important;
   }
 
-  .section-wrapper .content-wrapper .content-top .margin-left,
-  .section-wrapper .content-wrapper .content-top .margin-right {
-    margin: 0;
-    margin-bottom: 35px;
-  }
-  .header-section .navbar-section .nav-left .main-menu li {
-    display: inherit;
-    padding: 0;
-    border: 1px solid #e5e5e5;
-    padding: 8px 20px;
-    margin-bottom: 5px;
-    border-radius: 8px;
+  .main-section .contents-wrapper {
+    width: 100% !important;
   }
 
-.header-section .navbar-section .nav-left .main-menu li a {
-    padding: 14px 70px 14px 30px;
-    border: none;
-    font-size: 11px;
+  .sidbar-wrap {
+    width: 100% !important;
+    margin-left: inherit !important;
   }
 
-  .section-wrapper .sidbar-wrap .range-slider {
-    width: 100%;
-}
-  
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media  (max-width: 590px) {
-  
-  .header-section .navbar-section .nav-left .main-menu li a {
-    padding: 10px 56px 10px 15px;
-    font-size: 12px;
-  }
-  .header-section .navbar-section .nav-left .main-menu li .more {
-    font-size: 10px;
-  }
-  .header-section .navbar-section .nav-left .main-menu li a img {
-    top: 43%;
-    right: 18px;
-  }
-  
-}
-
-
-
-@media  (max-width: 480px) {
-  
-  .header-section .navbar-section .nav-left .main-menu li {
-    display: inherit;
-    padding: 0;
-    border: 1px solid #e5e5e5;
-    padding: 8px 20px;
-    margin-bottom: 5px;
-    border-radius: 8px;
-  }
-  .header-section .navbar-section .nav-left .main-menu li a {
-    padding: 0;
-    border: none;
-    font-size: 10px;
-  }
-  .header-section .navbar-section .nav-left .main-menu li .more {
-    margin-left: 0;
-    margin-top: 0;
-  }
   .header-section .navbar-section .nav-right .icon {
-    margin-left: 0;
-    margin-bottom: 5px;
+    width: inherit !important;
+    height: inherit !important;
 
-    img{
-      display: inline-block;
+    img {
+      display: inline-block !important;
     }
   }
-  .header-section .navbar-section .nav-right {
-    display: grid;
-    top: 16px;
+
+  // list-vew-----------------------
+
+  .list-view {
+    .card-item {
+      display: inherit !important;
+
+      .card-figure {
+        width: 100% !important;
+      }
+
+      .card-content {
+        width: 100% !important;
+        margin-top: 50px !important;
+        margin-left: 0 !important;
+      }
+    }
   }
-  .section-wrapper .sidbar-wrap .amenites {
-    display: inherit;
-  }
-  .section-wrapper .sidbar-wrap .amenites .amenites-right {
-    position: inherit;
-    width: inherit;
-    right: 0;
-    top: 0;
-  }
-  
+
+
 }

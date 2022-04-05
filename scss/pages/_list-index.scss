@@ -1,0 +1,95 @@
+.list-view {
+  .content-wrapper {
+    width: 100% !important;
+  }
+
+  .card-wrapper {
+    margin: 0;
+    display: inherit !important;
+  }
+
+
+  .card-item {
+    display: flex;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+
+    .card-figure {
+      width: 47.80775716694772%;
+    }
+
+    .card-content {
+      width: calc(52.23251895534962% - 50px);
+      margin-left: 50px;
+
+      p {
+        font-size: 22px;
+        line-height: 38px;
+        margin-bottom: 26px;
+      }
+
+      .fly-top {
+        margin-bottom: 15px;
+      }
+
+      .card-icon {
+        width: 16px;
+        height: 16px;
+        margin-bottom: -2px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .fly-top span,
+      .fly-bottom span {
+        font-size: 19px;
+        line-height: 23px;
+      }
+
+      .pricing {
+        display: inherit;
+        margin: 0;
+
+        .pricing-map {
+          position: inherit;
+          margin: 40px 0;
+
+          a {
+            font-size: 19px;
+            line-height: 23px;
+          }
+        }
+
+        button {
+          width: 48.23943661971831%;
+          position: absolute;
+          padding: 10px;
+          right: 0;
+        }
+      }
+    }
+
+    .title {
+      font-size: 28px;
+      line-height: 34px;
+      margin: 0;
+    }
+
+    .location {
+      margin: 28px 0;
+
+      .revew-left span {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      .revew-right span {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+body:after {
+  position: absolute;
+  content: "";
+  border: 1px solid #E0DFE2;
+  left: 0;
+  right: 0;
+  top: 20%;
+}
+
+.booking-wrap {
+  width: 1240px;
+  padding: 40px 20px;
+
+  .header-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .logo {
+      margin-right: 24px;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 700;
+      color: $cod-gray;
+      letter-spacing: 0.05em;
+    }
+
+    .cuntact {
+      position: absolute;
+      right: 0;
+
+
+      h3 {
+        text-align: end;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 700;
+        color: $cod-gray;
+        letter-spacing: 0.05em;
+
+      }
+    }
+  }
+
+  .section-wrapper {
+    .sidbar-wrap {
+      box-shadow: none;
+    }
+  }
+}

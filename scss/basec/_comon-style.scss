@@ -2,22 +2,28 @@ html,
 body {
     font-family: 'Fira Code', monospace;
     min-width: 320px;
-  img {
-      max-width: 100%;
-      display: block;
-  }
 
-  figure {
-      margin-bottom: 0;
-  }
+    img {
+        max-width: 100%;
+        display: block;
+    }
 
-  a {
-      display: inline-block;
-  }
+    figure {
+        margin: 0;
+    }
 
-  ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-  }
+    a {
+        text-decoration: none;
+    }
+
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+* {
+    box-sizing: border-box;
 }

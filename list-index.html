@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results-page</title>
+    <title>Results-list-page</title>
     <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
     <link rel="icon" href="images/icon/fabicon.png">
     <link rel="stylesheet" href="css/jquery-ui.css">
@@ -34,14 +34,14 @@
             </button>
           </div>
           <div class="navbar-2">
-            <button class="btn-home-icon bg">
-              <img src="./images/icon/vector.png" alt="">
-            </button>
-            <a href="list-index.html">
-              <button class="btn-home-icon">
-                <img src="./images/icon/vector-2.png" alt="">
+            <a href="index.html">
+              <button class="btn-home-icon bg">
+                <img src="./images/icon/vector.png" alt="">
               </button>
             </a>
+            <button class="btn-home-icon">
+              <img src="./images/icon/vector-2.png" alt="">
+            </button>
             <button class="sidebar">
               <div class="location">
                 <img src="./images/icon/fabicon.png" alt="Icon">
@@ -50,11 +50,10 @@
             </button>
           </div>
         </div>
-
       </header>
       <!-- Begaining content section -->
       <div class="section-wrapper">
-        <div class="contents-wrapper grid-view">
+        <div class="contents-wrapper list-view">
           <div class="card-wrapper">
             <div class="card-item">
               <figure class="card-figure">
@@ -90,15 +89,15 @@
                 </div>
 
                 <div class="pricing">
-                  <div class="pricing-count">
-                    <h4>$568.00</h4>
-                    <span>2stays</span>
-                  </div>
                   <div class="pricing-map">
                     <a href="#">See Map</a>
                   </div>
+                  <div class="pricing-count">
+                    <h4>$568.00</h4>
+                    <span>2stays</span>
+                    <button>View Details</button>
+                  </div>
                 </div>
-                <button>View Details</button>
               </div>
             </div>
             <div class="card-item">
@@ -135,15 +134,15 @@
                 </div>
 
                 <div class="pricing">
-                  <div class="pricing-count">
-                    <h4>$568.00</h4>
-                    <span>2stays</span>
-                  </div>
                   <div class="pricing-map">
                     <a href="#">See Map</a>
                   </div>
+                  <div class="pricing-count">
+                    <h4>$568.00</h4>
+                    <span>2stays</span>
+                    <button>View Details</button>
+                  </div>
                 </div>
-                <button>View Details</button>
               </div>
             </div>
             <div class="card-item">
@@ -180,15 +179,15 @@
                 </div>
 
                 <div class="pricing">
-                  <div class="pricing-count">
-                    <h4>$568.00</h4>
-                    <span>2stays</span>
-                  </div>
                   <div class="pricing-map">
                     <a href="#">See Map</a>
                   </div>
+                  <div class="pricing-count">
+                    <h4>$568.00</h4>
+                    <span>2stays</span>
+                    <button>View Details</button>
+                  </div>
                 </div>
-                <button>View Details</button>
               </div>
             </div>
             <div class="card-item">
@@ -225,182 +224,18 @@
                 </div>
 
                 <div class="pricing">
-                  <div class="pricing-count">
-                    <h4>$568.00</h4>
-                    <span>2stays</span>
-                  </div>
                   <div class="pricing-map">
                     <a href="#">See Map</a>
                   </div>
+                  <div class="pricing-count">
+                    <h4>$568.00</h4>
+                    <span>2stays</span>
+                    <button>View Details</button>
+                  </div>
                 </div>
-                <button>View Details</button>
               </div>
             </div>
           </div>
-        </div>
-        <div class="sidbar-wrap">
-          <figure class="close">
-            <img src="./images/icon/close-icon.png" alt="Close Icon">
-          </figure>
-          <h3 class="title">Refine your search</h3>
-          <h3 class="renge-slid">Price per Night</h3>
-
-          <div class="range-slider">
-            <div id="slider-range"></div>
-            <p>
-              <label for="amount"></label>
-              <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-              <input type="text" id="amount-2" readonly style="border:0; color:#f6931f; font-weight:bold;">
-            </p>
-          </div>
-
-          <div class="star-ratting">
-            <h3>Star rating</h3>
-            <div id="full-stars-example-two">
-              <div class="rating-group">
-                <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
-                <label aria-label="1 star" class="rating__label" for="rating3-1"><i class="rating__icon rating__icon--star zmdi zmdi-star"></i></label>
-                <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
-                <label aria-label="2 stars" class="rating__label" for="rating3-2"><i class="rating__icon rating__icon--star zmdi zmdi-star"></i></label>
-                <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
-                <label aria-label="3 stars" class="rating__label" for="rating3-3"><i class="rating__icon rating__icon--star zmdi zmdi-star"></i></label>
-                <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
-                <label aria-label="4 stars" class="rating__label" for="rating3-4"><i class="rating__icon rating__icon--star zmdi zmdi-star"></i></label>
-                <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
-                <label aria-label="5 stars" class="rating__label" for="rating3-5"><i class="rating__icon rating__icon--star zmdi zmdi-star"></i></label>
-                <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
-              </div>
-            </div>
-          </div>
-
-
-
-          <h3 class="payment">Payment type</h3>
-          <div class="check-item">
-            <input type="checkbox" id="cancellation">
-            <label for="cancellation">Free cancellation</label>
-          </div>
-          <h3 class="room">Room Specifics</h3>
-          <div class="room-count">
-            <h5>Beds</h5>
-            <div class="count">
-              <button class="prev"><img src="./images/icon/prev.png" alt="prev icon"></button>
-              <h5 class="number">3</h5>
-              <button class="next"> <img src="./images/icon/next.png" alt="next icon"></button>
-            </div>
-          </div>
-          <div class="room-count">
-            <h5>Bedrooms</h5>
-            <div class="count">
-              <button class="prev"><img src="./images/icon/prev.png" alt="prev icon"></button>
-              <h5 class="number">3</h5>
-              <button class="next"> <img src="./images/icon/next.png" alt="next icon"></button>
-            </div>
-          </div>
-          <div class="room-count">
-            <h5>Bathrooms</h5>
-            <div class="count">
-              <button class="prev"><img src="./images/icon/prev.png" alt="prev icon"></button>
-              <h5 class="number">3</h5>
-              <button class="next"> <img src="./images/icon/next.png" alt="next icon"></button>
-            </div>
-          </div>
-          <h3 class="amenit">Amenities</h3>
-          <div class="amenites">
-            <div class="amenites-left">
-              <div class="check-item">
-                <input type="checkbox" id="free-wifi">
-                <label for="free-wifi">Free Wifi</label>
-              </div>
-              <div class="check-item">
-                <input type="checkbox" id="Dining">
-                <label for="Dining">Dining services</label>
-              </div>
-              <div class="check-item">
-                <input type="checkbox" id="Laundry">
-                <label for="Laundry">Laundry</label>
-              </div>
-            </div>
-            <div class="amenites-right">
-              <div class="check-item">
-                <input type="checkbox" id="Packing">
-                <label for="Packing">Packing Available</label>
-              </div>
-              <div class="check-item">
-                <input type="checkbox" id="Conceirge">
-                <label for="Conceirge">Conceirge</label>
-              </div>
-              <div class="check-item">
-                <input type="checkbox" id="Spa">
-                <label for="Spa">Spa</label>
-              </div>
-            </div>
-          </div>
-          <div class="show-all">
-            <h4 class="show">Show all amenities</h4>
-          </div>
-          <h3 class="bottom">Room Type</h3>
-
-          <div class="amenites">
-            <div class="amenites-left">
-              <div class="check-item">
-                <input type="checkbox" id="Double">
-                <label for="Double">Double</label>
-              </div>
-              <div class="check-item">
-                <input type="checkbox" id="Suite">
-                <label for="Suite">Suite</label>
-              </div>
-            </div>
-            <div class="amenites-right">
-              <div class="check-item">
-                <input type="checkbox" id="Twin">
-                <label for="Twin">Twin</label>
-              </div>
-            </div>
-          </div>
-          <h3 class="bottom top">Room Classes</h3>
-
-          <div class="amenites">
-            <div class="amenites-left">
-              <div class="check-item">
-                <input type="checkbox" id="Deluxe">
-                <label for="Deluxe">Deluxe</label>
-              </div>
-            </div>
-            <div class="amenites-right">
-              <div class="check-item">
-                <input type="checkbox" id="Superior">
-                <label for="Superior">Superior</label>
-              </div>
-            </div>
-          </div>
-          <h3 class="bottom top">Popular Filters</h3>
-
-          <div class="amenites">
-            <div class="amenites-left">
-              <div class="check-item">
-                <input type="checkbox" id="Breakfast Included">
-                <label for="Breakfast Included">Breakfast Includ</label>
-              </div>
-              <div class="check-item">
-                <input type="checkbox" id="Vacation Rentals">
-                <label for="Vacation Rentals">Vacation Rentals</label>
-              </div>
-            </div>
-            <div class="amenites-right">
-              <div class="check-item">
-                <input type="checkbox" id="Free Cancellation">
-                <label for="Free Cancellation">Free Cancellation</label>
-              </div>
-              <div class="check-item">
-                <input type="checkbox" id="Excellent rating">
-                <label for="Excellent rating">Excellent rating</label>
-              </div>
-            </div>
-          </div>
-
-
         </div>
       </div>
 
@@ -410,22 +245,6 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script>
-      $(function () {
-        $("#slider-range").slider({
-          range: true,
-          min: 0,
-          max: 500,
-          values: [75, 300],
-          slide: function (event, ui) {
-            $("#amount").val("$" + ui.values[0]);
-            $("#amount-2").val("$" + ui.values[1]);
-          }
-        });
-        $("#amount").val("$" + $("#slider-range").slider("values", 0));
-        $("#amount-2").val("$" + $("#slider-range").slider("values", 1));
-      });
-    </script>
   </body>
 
 </html>

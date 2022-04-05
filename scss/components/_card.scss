@@ -1,0 +1,156 @@
+.card-item {
+  width: calc(50% - 20px);
+  max-width: 100%;
+  padding: 22px 15px;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+  border-radius: 5px;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  .card-figure {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    color: $cod-gray;
+    opacity: 0.8;
+    margin-top: 25px;
+  }
+
+  .card-icon {
+    display: inline-block;
+    margin-bottom: -1px;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+
+    .revew-left {
+      span {
+        font-size: 10px;
+        line-height: 11px;
+        color: $cod-gray;
+        font-weight: 500;
+        opacity: 0.5;
+        margin-left: -5px;
+      }
+    }
+
+    .revew-right {
+      margin-left: auto;
+
+      span {
+        font-size: 8px;
+        line-height: 9px;
+        color: $cod-gray;
+        font-weight: 500;
+        opacity: 0.8;
+        margin-left: -5px;
+      }
+    }
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: $cod-gray;
+    opacity: 0.8;
+    margin-bottom: 15px;
+  }
+
+  .fly-top {
+    margin-bottom: 8px;
+  }
+
+  .fly-top,
+  .fly-bottom {
+    .card-icon {
+      margin-bottom: -5px;
+    }
+
+    span {
+      font-size: 11px;
+      line-height: 13px;
+      color: $cod-gray;
+      font-weight: 500;
+      opacity: 0.5;
+      margin-left: -5px;
+    }
+  }
+
+  .pricing {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    position: relative;
+
+    .pricing-count {
+      display: flex;
+      align-items: center;
+
+      h4 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: $blue;
+        margin-right: 10px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 3px;
+          height: 20px;
+          background-color: $blue;
+          right: -10px;
+        }
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 13px;
+        color: $cod-gray;
+        opacity: 0.5;
+        margin-left: 5px;
+      }
+    }
+
+    .pricing-map {
+      right: 0;
+      position: absolute;
+
+      a {
+        color: $blue;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: $blue;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    border-radius: 10px;
+    border: none;
+  }
+}

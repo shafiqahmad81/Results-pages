@@ -1,0 +1,326 @@
+.sidbar-wrap {
+
+  width: 39.75806451612903%;
+  min-width: 380px;
+  padding: 22px 15px 100px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 40px;
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0;
+
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: $cod-gray;
+
+  }
+
+  .title {
+    margin-bottom: 57px;
+
+  }
+
+  .renge-slid {
+    margin-bottom: 50px;
+  }
+
+  .ui-widget-header {
+    border: 1px solid $blue;
+    background: $blue;
+    color: #FFFF;
+    font-weight: bold;
+  }
+
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default,
+  .ui-button,
+  html .ui-button.ui-state-disabled:hover,
+  html .ui-button.ui-state-disabled:active {
+    border: 1px solid #FFFFFF;
+    background: $blue;
+    font-weight: normal;
+    color: #FFFFFF;
+    border-radius: 50%;
+  }
+
+  .ui-state-focus:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .ui-slider-horizontal {
+    height: 0.3em;
+  }
+
+  .ui-slider-horizontal .ui-slider-handle {
+    top: -0.5em;
+    margin-left: -0.6em;
+  }
+
+  .range-slider {
+    width: 300px;
+    position: relative;
+
+    input {
+      width: 60px;
+      height: 40px;
+      text-align: center;
+      border: 1px solid rgba(159, 159, 159, 0.1) !important;
+      border-radius: 8px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    input#amount-2 {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .star-ratting {
+    margin-bottom: 20px;
+
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+  #full-stars-example-two {
+
+    /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+    .rating-group {
+      display: inline-flex;
+    }
+
+    /* make hover effect work properly in IE */
+    .rating__icon {
+      pointer-events: none;
+    }
+
+    /* hide radio inputs */
+    .rating__input {
+      position: absolute !important;
+      left: -9999px !important;
+    }
+
+    /* hide 'none' input from screenreaders */
+    .rating__input--none {
+      display: none
+    }
+
+    /* set icon padding and size */
+    .rating__label {
+      cursor: pointer;
+      padding: 0 0.2em;
+      font-size: 2.5rem;
+    }
+
+    /* set default star color */
+    .rating__icon--star {
+      color: orange;
+    }
+
+    /* if any input is checked, make its following siblings grey */
+    .rating__input:checked~.rating__label .rating__icon--star {
+      color: #ddd;
+    }
+
+    /* make all stars orange on rating group hover */
+    .rating-group:hover .rating__label .rating__icon--star {
+      color: orange;
+    }
+
+    /* make hovered input's following siblings grey on hover */
+    .rating__input:hover~.rating__label .rating__icon--star {
+      color: #ddd;
+    }
+  }
+
+
+  body {
+    padding: 1rem;
+    text-align: center;
+  }
+
+
+
+
+
+  .btn-r {
+    margin-right: 72px;
+  }
+
+  .star {
+    margin: 0;
+    margin-top: 22px;
+    margin-bottom: 32px;
+
+    img {
+      display: inline-block;
+
+    }
+  }
+
+  .payment {
+    margin-bottom: 25px;
+  }
+
+  .check-item {
+    label {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: $cod-gray;
+      position: relative;
+      margin-left: 25px;
+      display: block;
+      margin-bottom: 15px;
+
+      &::after {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        content: "";
+        border: 2px solid rgba($color: $cod-gray, $alpha: 0.7);
+        top: 0;
+        left: -25px;
+      }
+
+      &::before {
+        position: absolute;
+        width: 6px;
+        height: 3px;
+        content: "";
+        border: 2px solid rgba(18, 18, 18, .7);
+        top: 4px;
+        left: -21px;
+        transform: matrix(1, -0.9, 1, 1, 0, 0);
+        border-right: #f0f8ff;
+        border-top: #f0f8ff;
+        display: none;
+      }
+    }
+
+    input {
+      display: none;
+
+      &:checked {
+        &~label {
+          &::before {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .room {
+    margin-top: 32px;
+    margin-bottom: 27px;
+  }
+
+  .room-count {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 25px;
+
+    h5 {
+      margin: 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: $cod-gray;
+
+      &.number {
+        display: inline-block;
+        margin: 0 20px;
+      }
+    }
+
+    .count {
+      position: absolute;
+      right: 0;
+      display: flex;
+      align-items: center;
+
+      button {
+        border: none;
+        background-color: #FFFF;
+        cursor: pointer;
+
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .amenit {
+    margin-bottom: 25px;
+  }
+
+  .amenites {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .amenites-right {
+      position: absolute;
+      width: 50%;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .show-all {
+    position: relative;
+
+    .show {
+      font-size: 14px;
+      color: $cod-gray;
+      font-weight: 500;
+      line-height: 17px;
+      font-style: italic;
+      text-decoration: underline;
+      margin-bottom: 36px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 5px;
+        height: 5px;
+        border: 2px solid #5452b5;
+        left: 170px;
+        top: 5px;
+        transform: rotateZ(45deg);
+        border-top: aliceblue;
+        border-left: aliceblue;
+      }
+    }
+  }
+
+  .bottom {
+    margin-bottom: 22px;
+  }
+
+  .top {
+    margin-top: 32px;
+  }
+}
