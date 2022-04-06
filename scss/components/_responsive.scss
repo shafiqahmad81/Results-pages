@@ -27,6 +27,7 @@
     margin-top: 20px;
   }
 
+
 }
 
 
@@ -36,6 +37,7 @@
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
+
 
 @media (max-width: 767px) {
 
@@ -77,6 +79,42 @@
         margin-left: 0 !important;
       }
     }
+  }
+
+  // ================BOOKING style ========================
+
+  .booking-wrap .header-section {
+
+    margin-bottom: 160px !important;
+
+    .cuntact {
+      right: inherit !important;
+      top: 50px;
+      left: 74px;
+
+      h3 {
+        text-align: inherit !important;
+      }
+    }
+
+  }
+
+  body .booking-wrap:after {
+    top: 200px !important;
+  }
+
+
+  .booking-wrap .section-wrapp {
+    display: inherit !important;
+  }
+
+  .booking-wrap .section-wrapp .contents-wrapp .content-section {
+    width: 100% !important;
+  }
+
+  .booking-wrap .section-wrapp .sidbar-wrapp .content-section {
+    width: 100% !important;
+    position: inherit !important;
   }
 
 
