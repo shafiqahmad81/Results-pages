@@ -119,3 +119,18 @@
 
 
 }
+
+@media (max-width: 450px) {
+  .sidbar-wrap .range-slider {
+    width: 250px !important;
+  }
+
+  .sidbar-wrap .amenites {
+    display: inherit !important;
+  }
+
+  .sidbar-wrap .amenites .amenites-right {
+    position: inherit !important;
+    width: 50%;
+  }
+}

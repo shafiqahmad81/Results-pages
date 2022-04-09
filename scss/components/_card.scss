@@ -28,6 +28,7 @@
   .card-icon {
     display: inline-block;
     margin-bottom: -1px;
+    margin-right: 5px;
   }
 
   .location {
@@ -115,6 +116,7 @@
           height: 20px;
           background-color: $blue;
           right: -10px;
+          border-radius: 5px;
         }
       }
 
@@ -137,6 +139,7 @@
         font-weight: 500;
         font-size: 11px;
         line-height: 13px;
+        text-decoration: underline;
       }
     }
   }

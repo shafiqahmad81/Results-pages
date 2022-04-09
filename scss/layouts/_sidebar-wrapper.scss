@@ -36,10 +36,18 @@
   }
 
   .ui-widget-header {
-    border: 1px solid $blue;
+    border: 3px solid $blue;
     background: $blue;
     color: #FFFF;
     font-weight: bold;
+  }
+
+  .ui-widget.ui-widget-content {
+    border: 3px solid #E0DFE2;
+  }
+
+  .ui-slider-horizontal .ui-slider-range {
+    top: -3px;
   }
 
   .ui-state-default,
@@ -65,12 +73,12 @@
   }
 
   .ui-slider-horizontal .ui-slider-handle {
-    top: -0.5em;
+    top: -10px;
     margin-left: -0.6em;
   }
 
   .range-slider {
-    width: 300px;
+    width: 285px;
     position: relative;
 
     input {
@@ -79,6 +87,7 @@
       text-align: center;
       border: 1px solid rgba(159, 159, 159, 0.1) !important;
       border-radius: 8px;
+      color: $cod-gray;
 
       &:focus {
         outline: none;
@@ -90,6 +99,8 @@
       right: 0;
     }
   }
+
+
 
   .star-ratting {
     margin-bottom: 20px;
@@ -189,8 +200,9 @@
       color: $cod-gray;
       position: relative;
       margin-left: 25px;
-      display: block;
+      display: inline-block;
       margin-bottom: 15px;
+      cursor: pointer;
 
       &::after {
         position: absolute;
@@ -259,6 +271,27 @@
       right: 0;
       display: flex;
       align-items: center;
+
+      input[type="number"]:focus {
+        outline: none;
+      }
+
+      input[type="number"] {
+        -moz-appearance: textfield;
+        text-align: center;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        font-family: 'Rubik', sans-serif;
+
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
 
       button {
         border: none;

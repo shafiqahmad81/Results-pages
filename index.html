@@ -251,8 +251,8 @@
             <div id="slider-range"></div>
             <p>
               <label for="amount"></label>
-              <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-              <input type="text" id="amount-2" readonly style="border:0; color:#f6931f; font-weight:bold;">
+              <input type="text" id="amount" readonly style="border:0; font-weight:bold;">
+              <input type="text" id="amount-2" readonly style="border:0; font-weight:bold;">
             </p>
           </div>
 
@@ -286,25 +286,25 @@
           <div class="room-count">
             <h5>Beds</h5>
             <div class="count">
-              <button class="prev"><img src="./images/icon/prev.png" alt="prev icon"></button>
-              <h5 class="number">3</h5>
-              <button class="next"> <img src="./images/icon/next.png" alt="next icon"></button>
+              <button class="prev" id="decrement" onclick="stepper1(this)"><img src="./images/icon/prev.png" alt="prev icon"></button>
+              <input type="number" min="3" max="100" step="1" value="3" id="my-input-1">
+              <button class="next" id="increment" onclick="stepper1(this)"> <img src="./images/icon/next.png" alt="next icon"></button>
             </div>
           </div>
           <div class="room-count">
             <h5>Bedrooms</h5>
             <div class="count">
-              <button class="prev"><img src="./images/icon/prev.png" alt="prev icon"></button>
-              <h5 class="number">3</h5>
-              <button class="next"> <img src="./images/icon/next.png" alt="next icon"></button>
+              <button class="prev" id="decrement" onclick="stepper2(this)"><img src="./images/icon/prev.png" alt="prev icon"></button>
+              <input type="number" min="3" max="100" step="1" value="3" id="my-input-2">
+              <button class="next" id="increment" onclick="stepper2(this)"> <img src="./images/icon/next.png" alt="next icon"></button>
             </div>
           </div>
           <div class="room-count">
             <h5>Bathrooms</h5>
             <div class="count">
-              <button class="prev"><img src="./images/icon/prev.png" alt="prev icon"></button>
-              <h5 class="number">3</h5>
-              <button class="next"> <img src="./images/icon/next.png" alt="next icon"></button>
+              <button class="prev" id="decrement" onclick="stepper3(this)"><img src="./images/icon/prev.png" alt="prev icon"></button>
+              <input type="number" min="3" max="100" step="1" value="3" id="my-input-3">
+              <button class="next" id="increment" onclick="stepper3(this)"> <img src="./images/icon/next.png" alt="next icon"></button>
             </div>
           </div>
           <h3 class="amenit">Amenities</h3>
@@ -412,22 +412,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script>
-      $(function () {
-        $("#slider-range").slider({
-          range: true,
-          min: 0,
-          max: 500,
-          values: [75, 300],
-          slide: function (event, ui) {
-            $("#amount").val("$" + ui.values[0]);
-            $("#amount-2").val("$" + ui.values[1]);
-          }
-        });
-        $("#amount").val("$" + $("#slider-range").slider("values", 0));
-        $("#amount-2").val("$" + $("#slider-range").slider("values", 1));
-      });
-    </script>
+    <script src="js/main.js"></script>
   </body>
 
 </html>

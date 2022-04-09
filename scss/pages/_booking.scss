@@ -1,13 +1,18 @@
 body {
-  .booking-wrap:after {
-    position: absolute;
-    content: "";
-    border: 1px dashed #E0DFE2;
-    opacity: 0.8;
-    left: 0;
-    right: 0;
-    top: 150px;
+  .booking-wrap {
+    font-family: 'Public Sans', sans-serif;
+
+    &::after {
+      position: absolute;
+      content: "";
+      border: 1px dashed #E0DFE2;
+      opacity: 0.8;
+      left: 0;
+      right: 0;
+      top: 150px;
+    }
   }
+
 }
 
 
@@ -46,6 +51,7 @@ body {
         font-weight: 700;
         color: $cod-gray;
         letter-spacing: 0.05em;
+        margin-bottom: 9px;
 
       }
     }
@@ -122,55 +128,45 @@ body {
         position: absolute;
         right: 0;
 
+        h3 {
+          margin-bottom: 25px;
+        }
+
         h4 {
           margin-bottom: 44px;
         }
+      }
 
-        table {
-          position: relative;
-          margin-left: -5px;
+      table {
+        width: 100%;
+        margin-left: -2px;
 
-          tr {
-            td {
-              font-size: 14px;
-              line-height: 16px;
-              font-weight: 500;
-              color: $cod-gray;
-            }
+        .text-right {
+          text-align: end;
+        }
 
-            .text-right {
-              text-align: end;
-            }
+        .taxes {
+          td {
+            padding: 25px 0 55px;
           }
+        }
 
-          .taxes {
-            display: block;
-            margin: 25px 0 55px;
+        .total {
+          position: relative;
 
-            .text-right {
-              position: absolute;
-              right: 0;
-              top: 50px;
-            }
-
+          td {
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 700;
           }
 
           &::after {
             position: absolute;
             content: "";
-            left: 5px;
-            right: 2px;
-            bottom: 60px;
+            left: 0;
+            right: 0;
+            top: -25px;
             border: 1px dashed $cod-gray;
-          }
-
-          .total {
-            td {
-              font-size: 24px;
-              line-height: 28px;
-              font-weight: 700;
-              color: $cod-gray;
-            }
           }
         }
       }

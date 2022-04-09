@@ -3,6 +3,18 @@
     width: 100% !important;
   }
 
+  .header-section {
+    .navbar-2 {
+      .bg {
+        background-color: #E5E5E5;
+      }
+
+      .bg-blue {
+        background-color: $blue;
+      }
+    }
+  }
+
   .card-wrapper {
     margin: 0;
     display: inherit !important;
