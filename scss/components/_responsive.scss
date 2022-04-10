@@ -133,4 +133,20 @@
     position: inherit !important;
     width: 50%;
   }
+
+  .list-view {
+    .card-wrapper {
+      .card-item {
+        .card-content {
+          .location {
+            display: inherit !important;
+
+            .revew-left {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
